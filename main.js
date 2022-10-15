@@ -80,7 +80,7 @@ async function main() {
 
         // subscribe to changes from HA
         client.on('stateChanged', (device, command) => {
-          const deviceId = device.id;
+          //const deviceId = device.id;
 
           if (device.typeName === 'Scene') {
             // we're triggering a scene, lets do that and jump out.
